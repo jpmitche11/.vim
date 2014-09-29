@@ -8,7 +8,8 @@ set background=dark
 "colorscheme=distinguished
 
 set number mouse=a
-set showmode ruler laststatus=2
+set showmode  showcmd ruler laststatus=2
+set backspace=indent,eol,start
 
 " Allow hidden buffers, don't limit to 1 file per window/split
 set hidden
@@ -17,7 +18,7 @@ set hidden
 set listchars=tab:▸\ ,eol:¬
 set list
 
-set ts=4 sts=4 sw=4 noexpandtab
+set autoindent ts=4 sts=4 sw=4 noexpandtab
 set incsearch
 
 "TODO: find a way to make effect more subtle
