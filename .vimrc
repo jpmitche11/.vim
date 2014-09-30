@@ -21,8 +21,7 @@ set list
 set autoindent ts=4 sts=4 sw=4 noexpandtab
 set incsearch
 
-"TODO: find a way to make effect more subtle
-"set hlsearch
+set hlsearch
 :noremap <F8> :set hlsearch! hlsearch?<CR>
 
 nnoremap <leader>8 :set hlsearch<CR>mu*`u
