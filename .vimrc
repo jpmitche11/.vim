@@ -36,7 +36,3 @@ if has("autocmd")
 	autocmd BufWritePost .vimrc source $MYVIMRC
 endif
 
-if filereadable("project.vim")
-	source project.vim
-endif
-
