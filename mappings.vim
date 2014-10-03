@@ -12,6 +12,3 @@ nnoremap <leader>8 :set hlsearch<CR>mu*`u
 
 nnoremap <leader>ev :vsplit $MYVIMRC<cr>
 
-if has("autocmd")
-	autocmd BufWritePost mappings.vim source $MYVIMRC
-endif

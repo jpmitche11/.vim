@@ -34,7 +34,10 @@ let g:ctrlp_root_markers = ['.ctrlp-root']
 
 source ~/.vim/mappings.vim
 
-if has("autocmd")
+augroup refreshVimrc
+	autocmd!
 	autocmd BufWritePost .vimrc source $MYVIMRC
-endif
+	autocmd BufWritePost ~/.vim/mappings.vim source $MYVIMRC
+	autocmd BufWritePost ~/.vim/bundles.vim source $MYVIMRC
+augroup END
 
