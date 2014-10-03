@@ -5,7 +5,8 @@ source ~/.vim/bundles.vim
 filetype plugin indent on
 syntax on
 set background=dark
-"colorscheme=distinguished
+let g:solarized_termtrans=1
+colorscheme solarized
 
 set number mouse=a
 set showmode  showcmd ruler laststatus=2
