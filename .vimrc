@@ -11,7 +11,7 @@ colorscheme solarized
 set number mouse=a
 set showmode  showcmd ruler laststatus=2
 set backspace=indent,eol,start
-
+set visualbell t_vb=
 " Allow hidden buffers, don't limit to 1 file per window/split
 set hidden
 
@@ -23,9 +23,6 @@ set autoindent ts=4 sts=4 sw=4 noexpandtab
 set incsearch
 
 set hlsearch
-:noremap <F8> :set hlsearch! hlsearch?<CR>
-
-nnoremap <leader>8 :set hlsearch<CR>mu*`u
 
 "play around with these more:
 "set ignorecase
