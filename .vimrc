@@ -24,6 +24,10 @@ set incsearch
 
 set hlsearch
 
+let g:ctrlp_follow_symlinks=1
+"to use, put a .ctrlp-root file in project root folder
+let g:ctrlp_root_markers = ['.ctrlp-root']
+
 "play around with these more:
 "set ignorecase
 "set smartcase
