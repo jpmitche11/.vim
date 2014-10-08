@@ -22,8 +22,6 @@ set list
 set autoindent ts=4 sts=4 sw=4 noexpandtab
 set incsearch
 
-set hlsearch
-
 let g:ctrlp_follow_symlinks=1
 "to use, put a .ctrlp-root file in project root folder
 let g:ctrlp_root_markers = ['.ctrlp-root']
