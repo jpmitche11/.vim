@@ -31,11 +31,13 @@ hi! NonText    term=bold ctermfg=9 gui=bold guifg=#064c57
 let g:delimitMate_expand_cr=1
 let g:delimitMate_jump_expansion=0
 
-let g:ctrlp_follow_symlinks=1
+let g:ctrlp_follow_symlinks=2
 let g:ctrlp_show_hidden=1
 let g:ctrlp_cmd="CtrlP ."
 
 source ~/.vim/mappings.vim
+
+set foldmethod=syntax
 
 
 
@@ -45,6 +47,6 @@ augroup refreshVimrc
 	autocmd BufWritePost ~/.vim/mappings.vim source $MYVIMRC
 	autocmd BufWritePost ~/.vim/bundles.vim source $MYVIMRC
 
-	autocmd BufWritePre *.js silent %s/\s\+$//e
+	autocmd BufWritePre *.js,*.css,*.html,*.vim silent %s/\s\+$//e
 augroup END
 
