@@ -12,7 +12,7 @@ set backspace=indent,eol,start
 set visualbell t_vb=
 set hidden
 
-set listchars=tab:▸\ ,eol:¬,trail:•
+set listchars=tab:> ,trail:-
 set list
 
 set autoindent ts=4 sts=4 sw=4 noexpandtab
