@@ -14,11 +14,10 @@ set hidden
 set formatoptions=crqlj
 
 if has("mac")
-	echom "init mac settings"
 	set listchars=tab:▸\ ,eol:¬,trail:•
 elseif has("win32")
-	echom "init w32 settings"
-
+	"echom "init w32 settings"
+	set listchars=tab:> ,trail:-
 endif
 
 set list
@@ -54,7 +53,6 @@ augroup refreshVimrc
 	autocmd BufWritePost .vimrc source $MYVIMRC
 	autocmd BufWritePost ~/.vim/mappings.vim source $MYVIMRC
 	autocmd BufWritePost ~/.vim/bundles.vim source $MYVIMRC
-      
 	autocmd BufWritePre *.js,*.css,*.html,*.vim silent %s/\s\+$//e
 augroup END
 

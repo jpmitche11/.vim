@@ -13,6 +13,9 @@ nnoremap <C-K><C-B> :NERDTreeToggle<CR>
 noremap <F7> :set relativenumber! relativenumber?<CR>
 noremap <F8> :set hlsearch! hlsearch?<CR>
 
+nnoremap <C-S> :w<CR>
+vnoremap <C-S> <esc>:w<CR>gv
+
 " something to do with debugging syntax hilights
 noremap <F10> :echo "hi<" . synIDattr(synID(line("."),col("."),1),"name") . '> trans<' . synIDattr(synID(line("."),col("."),0),"name") . "> lo<" . synIDattr(synIDtrans(synID(line("."),col("."),1)),"name") . ">"<CR>
 
@@ -59,4 +62,8 @@ if has("gui_macvim") && has("gui_running")
 	nmap <D-p> <C-p>
 endif
 
-
+if has("windows")
+	nnoremap <A-a> ggVG
+	vnoremap <A-a> <ESC>ggVG
+	vnoremap <A-c> "*y
+endif
