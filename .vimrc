@@ -11,6 +11,7 @@ set scrolloff=3
 set backspace=indent,eol,start
 set visualbell t_vb=
 set hidden
+set formatoptions=crqlj
 
 set listchars=tab:▸\ ,eol:¬,trail:•
 set list
@@ -46,7 +47,7 @@ augroup refreshVimrc
 	autocmd BufWritePost .vimrc source $MYVIMRC
 	autocmd BufWritePost ~/.vim/mappings.vim source $MYVIMRC
 	autocmd BufWritePost ~/.vim/bundles.vim source $MYVIMRC
-
+      
 	autocmd BufWritePre *.js,*.css,*.html,*.vim silent %s/\s\+$//e
 augroup END
 
