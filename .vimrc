@@ -13,7 +13,14 @@ set visualbell t_vb=
 set hidden
 set formatoptions=crqlj
 
-set listchars=tab:▸\ ,eol:¬,trail:•
+if has("mac")
+	echom "init mac settings"
+	set listchars=tab:▸\ ,eol:¬,trail:•
+elseif has("win32")
+	echom "init w32 settings"
+
+endif
+
 set list
 
 set autoindent ts=4 sts=4 sw=4 noexpandtab
