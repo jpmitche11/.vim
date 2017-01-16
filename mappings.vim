@@ -37,7 +37,8 @@ vnoremap <Left> <Nop>
 vnoremap <Right> <Nop>
 
 
-nnoremap ; :CtrlPBuffer<esc>
+
+nnoremap <leader>; :CtrlPBuffer<esc>
 
 let g:ctrlp_buffer_func = { 'enter': 'CtrlPMappings' }
 
