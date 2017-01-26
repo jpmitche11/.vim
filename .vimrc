@@ -11,7 +11,7 @@ set scrolloff=3
 set backspace=indent,eol,start
 set visualbell t_vb=
 set hidden
-set formatoptions=crqlj
+autocmd BufNewFile,BufRead * setlocal formatoptions=crqlj
 
 if has("mac")
 	set listchars=tab:▸\ ,eol:¬,trail:•
