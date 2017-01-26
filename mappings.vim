@@ -13,6 +13,7 @@ nnoremap <C-K><C-B> :NERDTreeToggle<CR>
 noremap <F7> :set relativenumber! relativenumber?<CR>
 noremap <F8> :set hlsearch! hlsearch?<CR>
 
+nnoremap q: :q
 nnoremap <C-S> :w<CR>
 vnoremap <C-S> <esc>:w<CR>gv
 
@@ -27,6 +28,11 @@ nnoremap <leader>cs :set ignorecase! ignorecase?<CR>
 
 inoremap kj <esc>
 vnoremap kj <esc>
+
+"F1 too close to esc, keep hitting it by mistake
+nnoremap <F1> <esc>
+inoremap <F1> <esc>
+vnoremap <F1> <esc>
 
 "Training
 nnoremap <Up> <Nop>
