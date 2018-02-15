@@ -13,13 +13,8 @@ set visualbell t_vb=
 set hidden
 autocmd BufNewFile,BufRead * setlocal formatoptions=crqlj
 
-if has("mac")
-	set listchars=tab:▸\ ,eol:¬,trail:•
-elseif has("win32")
-	"echom "init w32 settings"
-	set listchars=tab:> ,trail:-
-endif
-
+" If no unicode:  set listchars=tab:> ,trail:-
+set listchars=tab:»\ ,extends:›,precedes:‹,nbsp:·,trail:·
 set list
 
 set autoindent ts=4 sts=4 sw=4 noexpandtab
