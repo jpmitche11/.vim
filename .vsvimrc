@@ -1,0 +1,13 @@
+set incsearch
+set autoindent
+
+vnoremap <TAB> >gv
+vnoremap <S-TAB> <gv
+
+vnoremap < <gv
+vnoremap > >gv
+
+nnoremap <TAB> >>
+nnoremap <S-TAB> <<
+
+inoremap kj <esc>l
